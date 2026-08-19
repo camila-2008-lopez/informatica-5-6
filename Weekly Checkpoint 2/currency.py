@@ -1,6 +1,14 @@
 def main():
+   p = float(input("Enter your quantity in pesos: "))
+   s = float(input(" Enter your quantity in soles: "))
+   r = float(input("Enter your quantity in reais: "))
 
-   int(input("What do you have left in pesos?")) = 5600
-   int(input("What do you have left in soles?")) = 105
-   int(input("What do you have left in reais?")) = 280
-print()
+   mxn = (p * 0.0054) + (s * 5.07) + (r * 3.28)
+   usd = mxn / 17.06
+
+   print("USD:", round(usd, 2))
+   print("MXN:", round(mxn, 2))
+
+   if __name__ == "__main__":
+      main()
+
