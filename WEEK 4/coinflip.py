@@ -16,7 +16,8 @@ def main():
         print("Invalid option.")
     else:
         print("Loser")
-
+        attempts -= 1
+        print("Attempts left:", attempts)
 
 
 if __name__ == "__main__":
