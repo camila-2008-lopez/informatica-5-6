@@ -1,14 +1,20 @@
 import random
 def main():
+    name = input("Hello! What is your name?")
+    print(f"Well, {name}, I am thinking of a number between 100.")
 
-while answer != "Hello! What is your name?"  # Condition
-        answer = input("Albert").strip().title() # Update
-        if answer == "Well, Albert, I am thinking of a number between 1 and 100.":
-            followup = input("10").strip().title()
-        if followup == "Your guess is too high.":
-            
+    # Start yhe game with random number
+     number = random,randint(1, 100)
+     guess = 0
 
-            break
+    while guess != number:
+       guess = int(input("Take a guess: "))
+       if guess > number:
+          print("Your guess is too high.")
+       elif guess < number:
+          print("Your guesss is to low.")
 
 
+if __name__ == "__main__":
+    main()
 
