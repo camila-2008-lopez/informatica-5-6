@@ -1,5 +1,6 @@
 def main():
     answer = "" # Initialize
+    followup = ""
 
     while answer != "Yes!": # Condition
         answer = input("Are we there yet? ").strip().title() # Update
