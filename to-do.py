@@ -1,6 +1,6 @@
 def main():
-    tasks = []
-    task = ""
+    tasks = ["clean house","Go on walks","go finish art work"]
+    task = "going fishing"
     while True:
         print(f"You have {len(tasks)} task to do.")
         print(tasks)
@@ -10,6 +10,7 @@ def main():
             tasks.append(new_task)
         elif command == "stop":
             break
+
 
 if __name__ == "__main__":
    main()
