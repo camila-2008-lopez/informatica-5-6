@@ -1,0 +1,3 @@
+ A while loop is a sructure that is used to repeat certain pieces of code
+ Are used when developing simple games because they keep the game running and repeat actions as long as a specific condition is true
+ 
