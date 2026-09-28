@@ -1,14 +1,19 @@
 def main():
-Multiply = [1*5,2*5,3*5,4*5,5*5,6*5,7*5,8*5,9*5,10*5]
-
-table = int(input("5: "))
-
-for i in range(5):
-    print("*"*(i*5))
-
-
-
-
+    nums = []
+    for i in range(1,11):
+        nums.append(str(i))
+    while True:
+        times_table = (input("Enter a number 1-10: ").lower().strip()
+        if times_table = "exit":
+            break
+            
+        elif times_table in numbers:
+            print(f"Here is the {times_table} times table.")
+        for x in range(1,11):
+            result = int(times_table) * x
+            print(f"{x} times {times_table} is {result}")
+    else:
+        print("Invalid command.")
 
 
 if __name__ == "__main__":
