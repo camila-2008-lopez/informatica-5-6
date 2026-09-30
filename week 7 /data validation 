@@ -1,0 +1,10 @@
+def main():
+  try:
+      number = int(input("Enter a number: "))
+      print("Number stored successfully.")
+  except ValueError:
+      print("You didn't enter )
+
+if __name__=="__main__":
+    main()
+
