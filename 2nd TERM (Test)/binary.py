@@ -6,7 +6,7 @@ def main():
 
 
 
-def binary_to_decimal():
+def binary():
     binary = ("2*3","2*2","2*1","2*0")
     int(1101)
     print(f"This is your number{binary}".)
