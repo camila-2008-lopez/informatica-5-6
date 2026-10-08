@@ -5,7 +5,22 @@ In this class, students will learn about functions, arguments, return values, va
 
 This repository template contains the required packages, extensions and settings required for this course.
 
+binary = input("Enter a binary number: ")
+
+decimal = int(binary, 2)
+
+print("Decimal:", decimal)
+
+
+
+
+
 #
+
+
+
+
+
 
 Academia Juárez<br>
 Instructor: R. Aaron Calahorra<br>
