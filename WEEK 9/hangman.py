@@ -10,13 +10,17 @@ def main():
         content = file.read()
         print(content)
 
-    # Turn file into a 
+    # Turn file into a
     with open("hangman.txt") as start_game:
-        word_list = start_game.read().splitlines()
+        (word_list) = start_game.read().splitlines()
 
-    for game in range(len(start_game)):
+
+    for game in range(start_game):
         print(f"Game {game + 1}: {word_list[game]}")
-    largest("hangman.txt")
+    ("hangman.txt")
+
+
+
 
 
 
