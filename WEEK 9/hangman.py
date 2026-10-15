@@ -1,34 +1,46 @@
-# Create a TXT file with all of the words.
-
-# Define the main function
-
-# Use with to open the TXT file
+import random
 
 def main():
-    # Read a file
-    with open("hangman.txt") as file:
-        content = file.read()
-        print(content)
+    start_game("words.txt")
 
-    # Turn file into a
-    with open("hangman.txt") as start_game:
-        (word_list) = start_game.read().splitlines()
+def start_game(file):
+    attempts =10
+    with open(file) as f:
+        word_bank = f.read().splitness()
+    word = random.choice(word_bank).lower()
+    hint = ["_"] * len(word)
+    incorrect_letters = [" "]
+    while attempts > 0:
+          print("Current word:"," ".join(hint))
 
+          while True:
+                guess = input("Guess a letter: ").lower()
+                if len(guess) == 1:
+                      break
+                else:
+                    print("Invalid guess. Try again.")
 
-    for game in range(start_game):
-        print(f"Game {game + 1}: {word_list[game]}")
-    ("hangman.txt")
-
-
-
-
-
-
+          if guess in word and guess not in hint:
+              for i in range(len(word)):
+                  if word[i] == guess:
+                      hint[i] = guess
+                  print("Great guess!")
+          elif guess in hint:
+           attempts -= 1
+           print("You already guessed that letter! Attempts left:", str(attempts): ")
+           else:
+               attempts -= 1
+               print("Wrong guess! Attempts left:", str(attempts))
+               if guess not in incorrect_letter:
+                   incorrect_letters.append(guess)
+               print(f"Incorrect letters: {" ".join(incorrect_letters)})
+           if "_" not in hint:
+               print("Congratulations! 🥳 You guessed the word:", word)
+               break
+        if attempts == 0 and "_" in hint:
+             print("No attempts left 💀 The word was: ")
 
 
 if __name__== "__main__":
     main()
-
-
-
 

@@ -1,5 +1,5 @@
 duck
-elephant
+Elephant
 party
 lion
 miles
